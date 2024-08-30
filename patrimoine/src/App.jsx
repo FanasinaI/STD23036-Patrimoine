@@ -30,7 +30,7 @@ function App() {
         const json = await response.json();
         console.log("Data received from API:", json);
         setPossession(json.possessions);
-        updateChart(json.possessions, startDate, endDate); // Update chart data
+        updateChart(json.possessions, startDate, endDate);
       } catch (error) {
         console.error('Fetch error:', error);
       }
@@ -90,7 +90,7 @@ function App() {
 
     setPossession(possessionsAvecValeurActuelle);
     setPatrimoineValeur(totalValeur);
-    updateChart(possessionsAvecValeurActuelle, startDate, endDate); // Update chart with current data
+    updateChart(possessionsAvecValeurActuelle, startDate, endDate);
   };
 
   return (
